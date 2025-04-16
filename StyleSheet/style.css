@@ -1,0 +1,42 @@
+/* *********Navigation Bar********* */
+.main-nav {
+  padding: 2.6rem 0;
+}
+
+.main-nav .logo {
+  width: 7rem;
+}
+
+.main-nav ul {
+  gap: 7.5rem;
+}
+
+.main-nav ul li a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.main-nav .nav-btn {
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: row;
+}
+
+.main-nav .nav-btn a {
+  padding: 1.6rem 2.6rem;
+  background-color: #42454a;
+  color: #fff;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+}
+
+.main-nav .nav-btn a:hover {
+  background-color: #fff;
+  color: #42454a;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
