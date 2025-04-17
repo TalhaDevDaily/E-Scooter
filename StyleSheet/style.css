@@ -1,3 +1,6 @@
+body {
+  background-color: #777;
+}
 /***********Navigation Bar***********/
 .main-nav {
   padding: 2.6rem 0;
@@ -92,3 +95,159 @@ h1 {
 }
 
 /* Buy Now Button */
+/* button {
+  margin-top: 6rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: 2rem;
+}
+
+button.hero-cta-btn {
+  width: 18rem;
+  height: auto;
+}
+
+button.hero-cta-btn .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 5.8rem;
+  height: 5.8rem;
+  background: #42454a;
+}
+
+button.hero-cta-btn .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: transparent;
+}
+
+button.hero-cta-btn .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 2.4rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.hero-cta-btn .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.39rem;
+  right: 0.0625rem;
+  width: 1rem;
+  height: 1rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.hero-cta-btn .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.2rem 2rem 0 1.2rem;
+  margin: 0 0 0 2rem;
+  color: #42454a;
+  font-weight: 500;
+  text-align: right;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: transparent;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+} */
+
+/* Video Playback Button */
+.button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #718176;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-content: center;
+  transition: transform 200ms;
+  font-weight: 600;
+}
+
+.button__text {
+  position: absolute;
+  inset: 0;
+  animation: text-rotation 8s linear infinite;
+
+  > span {
+    position: absolute;
+    transform: rotate(calc(19deg * var(--index)));
+    inset: 7px;
+  }
+}
+
+.button__circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background: transparent;
+  color: #7808d0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__icon--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover {
+  background: transparent;
+  transform: scale(1.2);
+}
+
+.button:hover .button__icon {
+  color: #000;
+}
+
+.button:hover .button__icon:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+@keyframes text-rotation {
+  to {
+    rotate: -360deg;
+  }
+}
